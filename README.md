@@ -77,7 +77,6 @@ $(document).ready(function () {
 ## DOM (MANIPULANDO EL DOCUMENTO) CON JQUERY.
 En este ejemplo veremos como agregar una clase o bien removerla en jQuery.
 
-``
 $(document).ready(function () { 
 
     //Agrengando Clase
@@ -87,7 +86,7 @@ $(document).ready(function () {
     $('h2').removeClass('text-center');
 
 })
-``
+
 <!--podemos usar cualquier etiqueta container o contenido
 en la h1 <h1 class="display-4"> esto pone la letra mas linda mas delgada-->
 
@@ -97,27 +96,32 @@ $( document ).ready(function() {
     // Todo el código aquí.
  
     //la etiqueta html reemplaza todo el codigo del mensaje que tengamos (incorpora un nuevo texto)
-    ``
-   $('h1').html('Etiqueta h1'); //seleccionando h1 a traves de una etiqueta y toma todos los h1 del sitio web
-   //Se puede seleccionar a traves de una clase.
-   $('.display-4').html('desde clase'); //se ejecuta lo ultimo de la linea, reemplaza a h1 y luego al texto desde clase.
+    //seleccionando h1 a traves de una etiqueta y toma todos los h1 del sitio web. 
+    //Se puede seleccionar a traves de una clase.
+   $('h1').html('Etiqueta h1'); 
+   
+   
+   //se ejecuta lo ultimo de la linea, reemplaza a h1 y luego al texto desde clase.
+   $('.display-4').html('desde clase');
 
 //reemplazar desde id
 $('#idh1').html('desde id');
 
 
   las operaciones anteriores en js seria el equivalente a "document.querySelector"
-  ejemplo:
+  Ejemplo:
   docuement.querySelector('h1').innerHTML = "Etiqueta h1";
   docuement.querySelector('.display').innerHTML = "desde clase";
   docuement.querySelector('#idh1').innerHTML = "desde id";
 
-   // $('.container h1').html('cambio de texto');
+  // $('.container h1').html('cambio de texto');
   // $('.container h1:first').html('cambio de texto');
-   $('.container h1:last').html('cambio de texto'); //ACCEDEMOS AL CONTAINER PERO AL PRIMERO
+  
+  //ACCEDEMOS AL CONTAINER PERO AL PRIMERO.
+   $('.container h1:last').html('cambio de texto');
 });-->
 
-Otras funciones más utilizados son:
+## OTRAS FUNCIONES MAS UTILIZADAS SON:
 
 append()
 toggleClass()
@@ -165,7 +169,7 @@ $(document).ready(function() {
   });
 });
 
-Otros eventos más utilizados son:
+## OTROS EVENTOS MAS UTILIZADOS SON:
 
 submit()
 preventDefault()
@@ -191,7 +195,7 @@ $(document).ready(function() {
   });
 });
 
-Otros efectos más utilizado son:
+## OTROS EFECTOS MAS UTILIZADOS.
 
 fadeIn()
 slideDown()
@@ -199,12 +203,8 @@ animate()
 stop()
 Callback Functions
 Chaining
-Espero que esta guía sea de utilidad y en el próximo módulo hablaremos de Ajax y jQuery que también es una super herramienta.
 
-comenzamos.
-
-podemos usar cualquier etiqueta container o contenido
-en la h1 <h1 class="display-4"> esto pone la letra mas linda mas delgada
+Por otro lado, podemos usar cualquier etiqueta container o contenido en la h1 <h1 class="display-4"> esto pone la letra mas linda mas delgada
 
 $( document ).ready(function() {
     //console.log('funcionando');
