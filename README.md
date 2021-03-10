@@ -29,8 +29,8 @@ Exiten dos métodos:
 
 Las principales ventajas son:
 
-1. Está alojado en muchos servidores en todo el mundo, por lo tanto la probabilidad de que se caiga es bajisima.
-2. Si nuestro usuario ya visitó un sitio web con tu mismo CDN, ya lo tiene en el navegador web, por lo tanto no tendrá que descargarlo nuevamente :)
+- Está alojado en muchos servidores en todo el mundo, por lo tanto la probabilidad de que se caiga es bajisima.
+- Si nuestro usuario ya visitó un sitio web con tu mismo CDN, ya lo tiene en el navegador web, por lo tanto no tendrá que descargarlo nuevamente :)
 
 ## ESTRUCTURA DE UN DOCUMENTO HTML CON JQUERY CDN.
 
@@ -107,28 +107,30 @@ $( document ).ready(function() {
 //reemplazar desde id
 $('#idh1').html('desde id');
 
+Las operaciones anteriores en js seria el equivalente a "document.querySelector"
 
-  las operaciones anteriores en js seria el equivalente a "document.querySelector"
-  Ejemplo:
-  docuement.querySelector('h1').innerHTML = "Etiqueta h1";
-  docuement.querySelector('.display').innerHTML = "desde clase";
-  docuement.querySelector('#idh1').innerHTML = "desde id";
+Ejemplo:
+
+  document.querySelector('h1').innerHTML = "Etiqueta h1";
+  document.querySelector('.display').innerHTML = "desde clase";
+  document.querySelector('#idh1').innerHTML = "desde id";
 
   // $('.container h1').html('cambio de texto');
   // $('.container h1:first').html('cambio de texto');
   
-  //ACCEDEMOS AL CONTAINER PERO AL PRIMERO.
+ ACCEDEMOS AL CONTAINER PERO AL PRIMERO.
    $('.container h1:last').html('cambio de texto');
 });-->
 
 ## OTRAS FUNCIONES MAS UTILIZADAS SON:
 
-append()
-toggleClass()
-css()
-remove()
-attr()
-EVENTOS CON JQUERY
+- append()
+- toggleClass()
+- css()
+- remove()
+- attr()
+
+## EVENTOS CON JQUERY.
 Existen muchos eventos que podemos realizar con jQuery, pero el más utilizado es el evento click, el cual tiene dos opciones.
 
 $(document).ready(function () {
@@ -171,10 +173,11 @@ $(document).ready(function() {
 
 ## OTROS EVENTOS MAS UTILIZADOS SON:
 
-submit()
-preventDefault()
-EFECTOS CON JQUERY
-Podemos agregar atractivos efectos muy fácilmente con jQuery, aquí te dejo un ejemplo:
+- submit()
+- preventDefault()
+- EFECTOS CON JQUERY
+
+## Podemos agregar atractivos efectos muy fácilmente con jQuery, aquí te dejo un ejemplo:
 
 $(document).ready(function() {
   var ocultar = $("#ocultar");
@@ -197,12 +200,12 @@ $(document).ready(function() {
 
 ## OTROS EFECTOS MAS UTILIZADOS.
 
-fadeIn()
-slideDown()
-animate()
-stop()
-Callback Functions
-Chaining
+- fadeIn()
+- slideDown()
+- animate()
+- stop()
+- Callback Functions
+- Chaining
 
 Por otro lado, podemos usar cualquier etiqueta container o contenido en la h1 <h1 class="display-4"> esto pone la letra mas linda mas delgada
 
@@ -221,8 +224,9 @@ $( document ).ready(function() {
 $('#idh1').html('desde id');
 
 
-  las operaciones anteriores en js seria el equivalente a "document.querySelector"
-  ejemplo:
+  Las operaciones anteriores en js seria el equivalente a "document.querySelector"
+  
+  Ejemplo:
   docuement.querySelector('h1').innerHTML = "Etiqueta h1";
   docuement.querySelector('.display').innerHTML = "desde clase";
   docuement.querySelector('#idh1').innerHTML = "desde id";
@@ -232,7 +236,7 @@ $('#idh1').html('desde id');
    $('.container h1:last').html('cambio de texto'); //ACCEDEMOS AL CONTAINER PERO AL PRIMERO
 });
 
-si quiero una imagen. repito en index y escribo una sola vez en jquery
+Si quiero una imagen. repito en index y escribo una sola vez en jquery
  <img src="" alt="">
        <img src="" alt="">
        <img src="" alt="">
@@ -242,31 +246,29 @@ si quiero una imagen. repito en index y escribo una sola vez en jquery
        Agrego los botones
 
        creo un nuevo div de resultado, un parrafo y clase div con dark y texto 4 y margej top 5
-       //REALIZANDO EVENTOR CON BOTONES
+       //REALIZANDO EVENTO CON BOTONES
 
-//Primero detectar los eventos.
+## Detectar los eventos.
 
 var parrafo= $('#resultado p');
-//agrega
+
+- Agrega.
+
 $('.btn-primary').click(function(){
   parrafo.addClass('display-4');
 })
-//quita
+
+- Quita.
+
 $('.btn-danger').click(function(){
   parrafo.removeClass('display-4');
 })
 
-//agrega y quita (lo que hace cada boton lo hace toggle en uno)
+- Agrega y quita (lo que hace cada boton lo hace toggle en uno).
+
 $('.btn-warning').click(function(){
   parrafo.toggleClass('display-4');
 })
-
-con esto manipulamos con el evemnto click el html
 });
 
-keyup!!
-Detecta cuando nosotros estamos escribiendo.
-hacer esta parte.
-
-PREVENT DEFAULT
 
