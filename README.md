@@ -212,9 +212,10 @@ $(document).ready(function() {
 - Callback Functions
 - Chaining
 
-## Letras con lineas delgadas.
+## Letras con lineas delgadas. 
 Podemos usar cualquier etiqueta container o contenido en la h1 <h1 class="display-4">.
 
+``
 $( document ).ready(function() {
     //console.log('funcionando');
     //la etiqueta html reemplaza todo el codigo del mensaje que tengamos (incorpora un nuevo texto)
@@ -243,8 +244,12 @@ Si quiero una imagen. repito en index y escribo una sola vez en jquery
  <img src="" alt="">
        <img src="" alt="">
        <img src="" alt="">
+``
 
-  - Trabajando con botones: Le hago espaciado my-5 a la clase container, agrego los botones y creo un nuevo div de resultado, un parrafo y clase div con dark y texto 4 y margen top 5
+ ## Trabajando con botones: 
+  - Hago espaciado my-5 a la clase container.
+  - Agrego los botones y creo un nuevo div de resultado.
+  - Un parrafo, clase div con dark y texto 4 y margen top 5.
  
 ## REALIZANDO EVENTO CON BOTONES
 
