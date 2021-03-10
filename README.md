@@ -2,55 +2,69 @@
 
 # jquery
 
-paso a paso sobre jQuery veremos los elementos esenciales para poder trabajar con esta hermosa librería, si eres nuevo y no sabes nada, no te preocupes que iremos paso a paso conociendo los fundamentos de esta librería de Javascript.
+Elementos esenciales para poder trabajar con esta librería paso a paso.
 
-¿QUÉ ES JQUERY?
-Según la definición de su página oficial, jQuery es una librería de JavaScript rápida, pequeña y poderosa en funciones. Podemos manejar eventos, manipular el DOM HTML, agregar animaciones, Ajax entre otras cositas.
+## ¿QUÉ ES JQUERY?
+Es una librería de JavaScript rápida, pequeña y poderosa en funciones. Podemos manejar eventos, manipular el DOM HTML, agregar animaciones, Ajax entre otras cositas.
 
-VENTAJAS DE UTILIZAR JQUERY
+## VENTAJAS DE UTILIZAR JQUERY.
 Para mi las principales ventajas de utilizar jQuery son:
 
-Compatibilidad con navegadores antiguos.
-Fácil escritura y comprensión del código.
-Es Open Source.
-Muchos Plugins
-Facilidad de utilizar AJAX
+- Compatibilidad con navegadores antiguos.
+- Fácil escritura y comprensión del código.
+- Es Open Source.
+- Muchos Plugins
+- Facilidad de utilizar AJAX
+
 Ahora lo bonito... comencemos a trabajar con Jquery!
 
-INSTALACIÓN DE JQUERY EN NUESTRO SITIO WEB.
-Exiten dos métodos que yo recomiendo, el primero y el más fácil de todos es a través de un CDN y el segundo es descargar la libería y crear un nuevo archivo JS con todos sus códigos.
+**********************************************************************************************************************************************************************
 
-¿Por qué prefiero a través de un CDN?
+## INSTALACIÓN DE JQUERY EN NUESTRO SITIO WEB.
+Exiten dos métodos:
+1. El más fácil de todos es a través de un CDN.
+2. Descargar la libería y crear un nuevo archivo JS con todos sus códigos.
+
+## ¿POR QUE PREFIERO A TRAVES DE UN CDN?
+
 Las principales ventajas son:
 
-Está alojado en muchos servidores en todo el mundo, por lo tanto la probabilidad de que se caiga es bajisima.
-Y la más importante es que si nuestro usuario ya visitó un sitio web con tu mismo CDN, ya lo tiene en el navegador web, por lo tanto no tendrá que descargarlo nuevamente :)
-ESTRUCTURA DE UN DOCUMENTO HTML CON JQUERY CDN
+1. Está alojado en muchos servidores en todo el mundo, por lo tanto la probabilidad de que se caiga es bajisima.
+2. Si nuestro usuario ya visitó un sitio web con tu mismo CDN, ya lo tiene en el navegador web, por lo tanto no tendrá que descargarlo nuevamente :)
+
+## ESTRUCTURA DE UN DOCUMENTO HTML CON JQUERY CDN.
+
 A continuación dejo el sitio web donde podrán utilizar el CDN de jquery: https://code.jquery.com/
 
-Por ejemplo yo utilizaré la versión minificada o comprimida:
-CDN JQUERY
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+Por ejemplo yo utilizaré la versión comprimida:
 
-bootstrap.
+CDN JQUERY
+``
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+``
+
+## BOOTSTRAP.
 Trabajare con solo los hilos de css
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-PRIMEROS PASOS
-Aquí puedes revisar la documentación oficial de jQuery.
+## PRIMEROS PASOS (Aquí puedes revisar la documentación oficial de jQuery). 
 Para ejecutar el código jQuery tenemos que esperar que todo el documento HTML esté cargado, para eso llamamos a jQuery con el signo de "$" y seleccionamos el documento y la función .ready
 
+``
 $( document ).ready(function() {
  
   // Todo el código aquí.
   
  
 });
-SELECTORES CON JQUERY
+``
+
+## SELECTORES CON JQUERY.
 En este primer ejemplo seleccionaremos una etiqueta, un ID y una clase CSS para manipular el contenido HTML de una etiqueta "h1", además de comparar el código de jQuery con JavaScript.
+
+``
 $(document).ready(function () { 
 
-    
     $('h1').html('texto modificado con etiqueta h1');
     $('#idh1').html('texto modificado con ID');
     $('.text-center').html('texto modificado con clase');
@@ -58,9 +72,12 @@ $(document).ready(function () {
     //Forma con Javascript
     //document.querySelector('h1').innerHTML = 'Texto modificado';
 })
+``
 
-DOM (MANIPULANDO EL DOCUMENTO) CON JQUERY
+## DOM (MANIPULANDO EL DOCUMENTO) CON JQUERY.
 En este ejemplo veremos como agregar una clase o bien removerla en jQuery.
+
+``
 $(document).ready(function () { 
 
     //Agrengando Clase
@@ -70,9 +87,9 @@ $(document).ready(function () {
     $('h2').removeClass('text-center');
 
 })
-
+``
 <!--podemos usar cualquier etiqueta container o contenido
-en la h1 <h1 class="display-4"> esto pone la letra mas linda mas delgada
+en la h1 <h1 class="display-4"> esto pone la letra mas linda mas delgada-->
 
 $( document ).ready(function() {
     //console.log('funcionando');
