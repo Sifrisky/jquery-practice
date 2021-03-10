@@ -213,10 +213,9 @@ $(document).ready(function() {
 - Chaining
 
 ## Letras con lineas delgadas. 
-Podemos usar cualquier etiqueta container o contenido en la h1.
-Ejemplo: 
+Podemos usar cualquier etiqueta container o contenido en la h1
 
-  <h1 class="display-4">.
+  <h1 class="display-4">
  
  - La etiqueta html reemplaza todo el codigo del mensaje que tengamos (incorpora un nuevo texto)
  
