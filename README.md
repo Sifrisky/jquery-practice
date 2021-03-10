@@ -135,36 +135,41 @@ Existen muchos eventos que podemos realizar con jQuery, pero el más utilizado e
 
 $(document).ready(function () {
     
-    //Evento click Agregando clase
+    - Evento click Agregando clase.
+    
     $('#boton1').click(function(){
         $('#contenido').addClass('text-center');
     });
 
 
-    //Evento click Agregando estilo en css
+    - Evento click Agregando estilo en css.
+    
     $('#boton2').click(function(){
         $('#contenido h2').css('color','salmon'); //SELEcciono elemento y luego aplicar la funcion
     });
 
-    //Alternativa al evento click
+    - Alternativa al evento click.
+    
     $('#boton3').on('click',function(){
         $('#contenido h2').toggleClass('display-4');
     });
 
 });
 
-Aquí te dejo otro ejemplo con el evento keyup()
+## Mas ejemplos con el evento keyup().
+
 $(document).ready(function() {
   //Declarar variables reutilizables
   var input = $("#nombre");
   var contenido = $("#contenido");
 
-  //Evento keyup
-  input.keyup(function() {
+  - Evento keyup.
+   input.keyup(function() {
     console.log(input.val()); //verificamos en consola
     contenido.html(input.val()); //agregamos en contenido
 
-    //Podemos verificar si está vacio el input
+  - Podemos verificar si está vacio el input.
+    
     if (input.val() === "") {
       contenido.html("Estoy esperando...");
     }
@@ -207,20 +212,18 @@ $(document).ready(function() {
 - Callback Functions
 - Chaining
 
-Por otro lado, podemos usar cualquier etiqueta container o contenido en la h1 <h1 class="display-4"> esto pone la letra mas linda mas delgada
+## Letras con lineas delgadas.
+Podemos usar cualquier etiqueta container o contenido en la h1 <h1 class="display-4">.
 
 $( document ).ready(function() {
     //console.log('funcionando');
-    
-    // Todo el código aquí.
- 
     //la etiqueta html reemplaza todo el codigo del mensaje que tengamos (incorpora un nuevo texto)
-    ``
+    
    $('h1').html('Etiqueta h1'); //seleccionando h1 a traves de una etiqueta y toma todos los h1 del sitio web
    //Se puede seleccionar a traves de una clase.
    $('.display-4').html('desde clase'); //se ejecuta lo ultimo de la linea, reemplaza a h1 y luego al texto desde clase.
 
-//reemplazar desde id
+- Reemplazar desde id.
 $('#idh1').html('desde id');
 
 
@@ -241,12 +244,9 @@ Si quiero una imagen. repito en index y escribo una sola vez en jquery
        <img src="" alt="">
        <img src="" alt="">
 
-       trabajando con botones.
-       le hago espaciado my-5 a la clase container.
-       Agrego los botones
-
-       creo un nuevo div de resultado, un parrafo y clase div con dark y texto 4 y margej top 5
-       //REALIZANDO EVENTO CON BOTONES
+  - Trabajando con botones: Le hago espaciado my-5 a la clase container, agrego los botones y creo un nuevo div de resultado, un parrafo y clase div con dark y texto 4 y margen top 5
+ 
+## REALIZANDO EVENTO CON BOTONES
 
 ## Detectar los eventos.
 
