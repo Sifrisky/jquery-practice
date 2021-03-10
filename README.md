@@ -213,39 +213,30 @@ $(document).ready(function() {
 - Chaining
 
 ## Letras con lineas delgadas. 
-Podemos usar cualquier etiqueta container o contenido en la h1
+Podemos usar cualquier etiqueta container o contenido en la h1  <!--<h1 class="display-4">-->
 
-  <h1 class="display-4">
- 
  - La etiqueta html reemplaza todo el codigo del mensaje que tengamos (incorpora un nuevo texto)
- 
  $( document ).ready(function() {
    console.log('funcionando');
    
-   
  - Seleccionando h1 a traves de una etiqueta y toma todos los h1 del sitio web
-   
    $('h1').html('Etiqueta h1');
    
-   
- - Se puede seleccionar a traves de una clase. Aqui se ejecuta lo ultimo de la linea, reemplaza a h1 y luego al texto desde clase.
-  
+ - Se puede seleccionar a traves de una clase. Aqui se ejecuta lo ultimo de la linea, reemplaza a h1 y luego al texto desde clase
   $('.display-4').html('desde clase'); 
 
-
-- Reemplazar desde id.
-
+- Reemplazar desde id
 $('#idh1').html('desde id');
 
   ## Las operaciones anteriores en js seria el equivalente a "document.querySelector"
   
   Ejemplo:
-  docuement.querySelector('h1').innerHTML = "Etiqueta h1";
-  docuement.querySelector('.display').innerHTML = "desde clase";
-  docuement.querySelector('#idh1').innerHTML = "desde id";
+  document.querySelector('h1').innerHTML = "Etiqueta h1";
+  document.querySelector('.display').innerHTML = "desde clase";
+  document.querySelector('#idh1').innerHTML = "desde id";
 
-   // $('.container h1').html('cambio de texto');
-  // $('.container h1:first').html('cambio de texto');
+ // $('.container h1').html('cambio de texto');
+ // $('.container h1:first').html('cambio de texto');
    $('.container h1:last').html('cambio de texto'); //ACCEDEMOS AL CONTAINER PERO AL PRIMERO
 });
 
